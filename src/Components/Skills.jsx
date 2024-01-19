@@ -113,7 +113,7 @@ const Skills = () => {
 
         <main>
           <div class="card">
-            <img src="/Images/Business-Development.png" alt="" />
+            <img src="/Images/bizdev.jpg" alt="" />
             <div class="card-content">
               <h2>Business Development</h2>
               <p>
