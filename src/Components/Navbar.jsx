@@ -40,7 +40,9 @@ const Navbar = () => {
             </p>
           </div>
           <div className="navItem  text-end h-10">
-            <p>Skills</p>
+            <p>
+              <AnchorLink href="#whatCanIdo">Skills</AnchorLink>
+            </p>
           </div>
           <div className="navItem  text-end h-10">
             <p>Experience</p>

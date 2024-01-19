@@ -112,6 +112,13 @@ h4 {
   font-family: "Amita", serif;
 }
 
+h3 {
+  font-family: "Amita", serif;
+  font-weight: 700;
+  color: rgb(245, 139, 156);
+  font-size: large;
+}
+
 li {
   list-style: lower-alpha;
 }
