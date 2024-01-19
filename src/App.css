@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #FFC0CB */
+
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+
 .App {
   text-align: center;
 }
@@ -36,3 +44,131 @@
     transform: rotate(360deg);
   }
 }
+/* ----------------------------------------------------- */
+/* #navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} */
+#navBar .navItem {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  color: rgb(245, 139, 156);
+  margin: 10px 0;
+  font-size: 1.2rem;
+  /* color: #eb6a7f; */
+}
+
+.socialIcons {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.socialIcons:hover {
+  transform: scale(1.5);
+  transition: 1s;
+  /* color: #e93553; */
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* Scale from center */
+.navItem p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(245, 139, 156);
+  opacity: 0;
+  transition: opacity 1000ms, transform 2000ms;
+}
+
+.navItem:hover p,
+.navItem:focus p {
+  color: white;
+}
+
+.navItem p:hover::after,
+.navItem p:focus::after {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: center;
+  background-color: white;
+}
+h1 {
+  font-family: "Amita", serif;
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 2px;
+  font-style: italic;
+  font-family: "Amita", serif;
+}
+ul {
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+}
+
+li {
+  font-family: "Amita", serif;
+  color: rgb(231, 75, 231);
+  font-size: 30px;
+  font-weight: 500;
+  height: 60px;
+  position: relative;
+  top: 0;
+  animation: slide 20s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -235px;
+  }
+}
+
+li span {
+  position: relative;
+  height: 60px;
+  /* display: inline-block; */
+}
+
+li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #2f3a4b;
+  border-left: 2px solid rgb(230, 64, 230);
+  animation: typing 5s steps(16) infinite;
+}
+.roles {
+  font-family: "Amita", serif;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100%);
+  }
+  100% {
+    left: 0;
+    right: 0;
+  }
+}
+.snowBaby {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+/* .Home0 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+ */
