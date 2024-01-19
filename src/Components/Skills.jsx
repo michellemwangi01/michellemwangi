@@ -51,6 +51,25 @@ const Skills = () => {
 
         <main>
           <div class="card">
+            <img src="/Images/Database-Management-System.jpg" alt="" />
+            <div class="card-content">
+              <h2>Database Administration</h2>
+              <p>
+                My passion for data management translates into a strong
+                background in database administration. I am proficient in SQL
+                and implement best practices for data security, integrity, and
+                performance optimization.
+              </p>
+              <a href="#" class="button">
+                View Projects
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+              </a>
+            </div>
+          </div>
+        </main>
+
+        <main>
+          <div class="card">
             <img src="/Images/project-management.jpeg" alt="" />
             <div class="card-content">
               <h2>IT Project Management</h2>
@@ -72,26 +91,7 @@ const Skills = () => {
 
         <main>
           <div class="card">
-            <img src="/Images/Database-Management-System.jpg" alt="" />
-            <div class="card-content">
-              <h2>Database Administration</h2>
-              <p>
-                My passion for data management translates into a strong
-                background in database administration. I am proficient in SQL
-                and implement best practices for data security, integrity, and
-                performance optimization.
-              </p>
-              <a href="#" class="button">
-                View Projects
-                <span class="material-symbols-outlined">arrow_right_alt</span>
-              </a>
-            </div>
-          </div>
-        </main>
-
-        <main>
-          <div class="card">
-            <img src="/Images/technical_support.png" alt="" />
+            <img src="/Images/technical-support.jpg" alt="" />
             <div class="card-content">
               <h2>IT Tech Support</h2>
               <p>

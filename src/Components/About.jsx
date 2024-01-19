@@ -4,8 +4,9 @@ import Lottie from "lottie-react";
 const About = () => {
   return (
     <div className="h-100 text-geay-700 bg-white mt-4">
-      <div className="flex w-5/6 m-auto">
-        <div className="lottieContainer w-1/3">
+      <h1 className="text-center">Who Am I?</h1>
+      <div className="flex w-5/6 m-auto justify-center flex-wrap md:flex-row flex-col">
+        <div className="lottieContainer w-1/3 m-auto">
           <dotlottie-player
             src="https://lottie.host/64eb6698-5f20-4ba7-8f75-95da6a05e7a3/tM0BospUdW.json"
             background="transparent"
@@ -15,8 +16,7 @@ const About = () => {
             autoplay
           ></dotlottie-player>
         </div>
-        <div id="whoamI" className="  w-2/3 my-4">
-          <h1>Who Am I?</h1>
+        <div id="whoamI" className="  w-2/3 my-4 text-center m-auto">
           <p className="text-xl">
             Hi there! Welcome to my home. My name is Michelle mwangi and I am a
             Joyful and Curious Tech Enthusiast. In my 8 year career, I've
