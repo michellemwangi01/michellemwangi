@@ -6,14 +6,11 @@ import Socials from "./Components/Socials";
 
 function App() {
   return (
-    <>
-      <div className="bg-gray-700">
-        <Banner />
-        <About />
-      </div>
-
-      <button className="hover:text-2xl bg-white">test button</button>
-    </>
+    <div className="bg-white">
+      <Banner />
+      <About />
+      {/*  <button className="hover:text-2xl bg-white">test button</button> */}
+    </div>
   );
 }
 

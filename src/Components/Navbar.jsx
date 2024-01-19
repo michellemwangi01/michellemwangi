@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import { IoMenuSharp } from "react-icons/io5";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <div
       id="navBar"
-      className="flex align-middle justify-between mx-4"
+      className="flex align-middle justify-between mx-4 "
       style={{ fontFamily: "Amita", color: "#FFC0CB", zIndex: "10" }}
     >
       <div>
@@ -34,7 +35,9 @@ const Navbar = () => {
 
         <div className="md:flex hidden align-middle text-xl md:justify-evenly md:flex-nowrap md:flex-row flex-col justify-center  ">
           <div className="navItem text-end h-10">
-            <p>About</p>
+            <p>
+              <AnchorLink href="#whoamI">About</AnchorLink>
+            </p>
           </div>
           <div className="navItem  text-end h-10">
             <p>Skills</p>
@@ -49,7 +52,7 @@ const Navbar = () => {
         {showMenu && (
           <div className="flex align-middle text-xl md:justify-evenly md:flex-nowrap md:flex-row flex-col justify-center">
             <div className="navItem text-end h-10">
-              <p>About</p>
+              <AnchorLink href="#whoamI">About</AnchorLink>
             </div>
             <div className="navItem  text-end h-10">
               <p>Skills</p>
