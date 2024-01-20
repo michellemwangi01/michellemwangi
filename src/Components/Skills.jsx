@@ -12,10 +12,10 @@ const Skills = () => {
       >
         <main>
           <div class="card">
-            <img src="/Images/frontend_development.jpg" alt="" />
-            <div class="card-content">
+            <img src="/Images/frontend_development.jpg " alt="" />
+            <div class="card-content ">
               <h2>Front-end Development</h2>
-              <p>
+              <p className="text-white">
                 As a skilled front-end developer, I bring proficiency in UI
                 frameworks like React to translate designs into user-friendly
                 and responsive web interfaces. I possess a strong understanding
@@ -37,7 +37,8 @@ const Skills = () => {
               <h2>Back-end Development</h2>
               <p>
                 My expertise in back-end development lies in utilizing Python
-                and PHP to build robust and scalable web applications. I am
+                and PHP and frameworks such as Flask & Django to provide
+                solutions by building robust and scalable web applications. I am
                 skilled in server-side programming, database integration, and
                 API development.
               </p>
@@ -51,14 +52,16 @@ const Skills = () => {
 
         <main>
           <div class="card">
-            <img src="/Images/Database-Management-System.jpg" alt="" />
+            <img src="/Images/database-manageent.png" alt="" />
             <div class="card-content">
               <h2>Database Administration</h2>
               <p>
                 My passion for data management translates into a strong
                 background in database administration. I am proficient in SQL
                 and implement best practices for data security, integrity, and
-                performance optimization.
+                performance optimization. I am committed to staying abreast of
+                the latest advancements which allows me to apply cutting-edge
+                techniques.
               </p>
               <a href="#" class="button">
                 View Projects
@@ -99,9 +102,8 @@ const Skills = () => {
                 and reliable technical assistance to users. I possess a deep
                 understanding of hardware, software, and network
                 troubleshooting, coupled with strong communication skills to
-                resolve issues quickly and effectively. I am committed to
-                delivering excellent customer service and ensuring optimal
-                system uptime.
+                resolve issues quickly and effectively, delivering excellent
+                customer service and ensuring optimal system uptime.
               </p>
               <a href="#" class="button">
                 View Projects
@@ -121,9 +123,8 @@ const Skills = () => {
                 strong understanding of market dynamics, customer needs, and
                 effective sales strategies. I am skilled in building
                 relationships, identifying and generating leads, and negotiating
-                successful deals. My passion for building profitable
-                partnerships and driving company growth makes me a valuable
-                asset to any business-oriented role.
+                successful deals. I'm experienced in building profitable
+                partnerships and driving company growth.
               </p>
               <a href="#" class="button">
                 View Projects
