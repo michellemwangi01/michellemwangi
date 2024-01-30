@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div className="bg-black">
       <div className="banner h-80 ">
-        <div className=" snow h-86"></div>
+        <div className=" snow  h-86"></div>
 
         <Navbar />
         <div className=" flex w-full h-5/6 items-center align-middle justify-center  flex-wrap ">
@@ -22,18 +22,19 @@ const Banner = () => {
               <MyNameAnimation className="roles" />
             </div>
           </div>
-          <div className="md:w-1/3 w-full overflow-visible relative h-full ">
+          <div className="flex align-middle py-20 md:w-1/3 w-full overflow-visible relative h-full  ">
             <img
-              src="/Images/FreeMeLarge.png"
-              className="object-cover overflow-visible"
+              src="/Images/AI_CoderGirl.jpg"
+              className="object-cover  rounded-full"
               alt="Michelle Mwangi"
               style={{
-                position: "absolute",
-                // transform: "scale(1.2)",
-                top: "-80px",
-                right: "10px",
-                height: "120%",
-                opacity: "0.8",
+                // position: "absolute",
+                // // transform: "scale(1.2)",
+                // // top: "px",
+                // right: "10px",
+                height: "100%",
+                opacity: "0.6",
+                // borderRadius: "35%",
               }}
             />
           </div>

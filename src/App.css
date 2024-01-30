@@ -119,10 +119,6 @@ h3 {
   font-size: large;
 }
 
-li {
-  list-style: lower-alpha;
-}
-
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -187,6 +183,42 @@ li {
   width: 100%;
 }
 
+.skill-slider {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 60%;
+  margin: auto;
+  /* overflow-x: hidden; */
+}
+
+.skill-slider li {
+  width: auto;
+}
+
+.skill-item {
+  display: inline-block; /* Ensure items stay on the same line */
+  min-width: 8rem;
+  text-align: center; /* Optional for centering content */
+  margin: 5px 15px;
+}
+
+.react-multi-carousel-list {
+  padding: 2rem;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: rgb(248, 143, 161);
+}
+
+.CircularProgressbar-text {
+  fill: rgb(248, 143, 161);
+}
+
+.skill-item h4 {
+  /* color: #3e98c7; */
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 /* .Home0 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
  */

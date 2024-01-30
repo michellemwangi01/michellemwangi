@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 const About = () => {
   return (
     <div className="h-100 text-geay-700 bg-white mt-4">
-      <h1 className="text-center">Who Am I?</h1>
+      <h1 className="text-center">Who I Am</h1>
       <div className="flex w-5/6 m-auto justify-center flex-wrap md:flex-row flex-col">
         <div className="lottieContainer w-1/3 m-auto">
           <dotlottie-player
@@ -18,14 +18,14 @@ const About = () => {
         </div>
         <div id="whoamI" className="  w-2/3 my-4 text-center m-auto">
           <p className="text-xl">
-            Hi there! Welcome to my home. My name is Michelle mwangi and I am a
-            Joyful and Curious Tech Enthusiast. In my 8 year career, I've
-            embraced diverse roles in and outside of the tech space, from
-            software implementation and database administration to project
-            management in IT. This journey has instilled in me a deep love for
-            growth and learning, recently led me to pursue a degree in CS,
-            certifications in Software engineering and rediscover my passion for
-            software development.
+            Hi there and welcome! My name is Michelle mwangi and I am a Joyful
+            and Curious Tech Enthusiast. In my 8 year career, I've embraced
+            diverse roles in and outside of the tech space, from software
+            implementation and database administration to project management in
+            IT. This journey has instilled in me a deep love for growth and
+            learning, recently led me to pursue a degree in CS, certifications
+            in Software engineering and rediscover my passion for software
+            development.
           </p>
 
           {/* <h4> Personality and Traits</h4> */}
