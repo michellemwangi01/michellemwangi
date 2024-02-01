@@ -30,28 +30,28 @@ const About = () => {
 
           {/* <h4> Personality and Traits</h4> */}
           <div className="my-6">
-            <div className="bg-green-200 p-2 m-2 rounded-xl text-xl ">
+            <div className="bg-red-200 p-2 m-2 rounded-xl text-xl ">
               <p>
                 I am highly intelligent and a fast learner: I grasp concepts
                 quickly and apply them to improve processes and drive positive
                 change.
               </p>
             </div>
-            <div className="bg-green-200 p-2 m-2 rounded-xl text-xl ">
+            <div className="bg-red-200 p-2 m-2 rounded-xl text-xl ">
               <p>
                 {" "}
                 I'm driven by efficiency and reliability: I consistently deliver
                 high-quality work with honesty and integrity.
               </p>
             </div>
-            <div className="bg-green-200 p-2 m-2 rounded-xl text-xl">
+            <div className="bg-red-200 p-2 m-2 rounded-xl text-xl">
               <p>
                 {" "}
                 I'm dedicated and diligent: My previous employers will attest to
                 my commitment and willingness to go the extra mile.
               </p>
             </div>
-            <div className="bg-green-200 p-2 m-2 rounded-xl text-xl ">
+            <div className="bg-red-200 p-2 m-2 rounded-xl text-xl ">
               <p>
                 {" "}
                 I'm a team player: I thrive in collaborative environments and

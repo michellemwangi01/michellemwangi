@@ -11,7 +11,6 @@ const Skills = () => {
         <h4 className="text-center mb-4">Language SKills</h4>
         <SkillsSlider />
         <h4 className="text-center mt-8">Technical SKills</h4>
-
         <div
           className=" flex m-auto justify-center flex-wrap"
           style={{ width: "98%" }}

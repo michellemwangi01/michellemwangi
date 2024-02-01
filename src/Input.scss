@@ -25,7 +25,7 @@ $grad: ();
 
 // The CSS
 .banner {
-  height: 90vh;
+  height: 100vh;
   // background: linear-gradient(#123 30%, #667);
   background: black;
   width: 90%;
@@ -45,7 +45,7 @@ $grad: ();
   background-size: $w + px $w + px;
   animation: snow $s linear infinite;
   content: "";
-  height: 120vh;
+  height: 150vh;
 }
 .snow:after {
   margin-left: -$w/3 + px;

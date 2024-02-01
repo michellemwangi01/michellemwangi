@@ -7,9 +7,9 @@ import Socials from "./Socials";
 
 const Banner = () => {
   return (
-    <div className="bg-black">
-      <div className="banner h-80 ">
-        <div className=" snow  h-86"></div>
+    <div className="bg-black h-100">
+      <div className="banner h-100">
+        <div className=" snow h-80"></div>
 
         <Navbar />
         <div className=" flex w-full h-5/6 items-center align-middle justify-center  flex-wrap ">
