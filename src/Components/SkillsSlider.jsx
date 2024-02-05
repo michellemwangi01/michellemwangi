@@ -3,6 +3,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "../App.css";
 
 const SkillsSlider = () => {
   const responsive = {
@@ -26,82 +27,85 @@ const SkillsSlider = () => {
   };
 
   return (
-    <div className="mb-4">
+    <div className="flex flex-col justify-center bg-gray-900 align-middle ">
+      <div className="pt-8">
+        <h1 className="text-center text-white">Languages & Frameworks</h1>
+      </div>
       <Carousel
         swipeable={true}
         draggable={true}
         showDots={true}
         responsive={responsive}
         autoPlaySpeed={1000}
-        className="skill-slider  bg-gray-900 rounded-2xl"
+        className="skill-slider  "
         partialVisible={true}
       >
         <div className="skill-item ">
+          <h4>PYTHON</h4>
+          <div className="m-auto w-60">
+            <CircularProgressbar value={90} text={`${90}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>FLASK</h4>
+          <div className="m-auto w-60">
+            <CircularProgressbar value={90} text={`${90}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>DJANGO</h4>
+          <div className="m-auto w-60">
+            <CircularProgressbar value={70} text={`${70}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>SQL</h4>
+          <div className="m-auto w-60">
+            {" "}
+            <CircularProgressbar value={90} text={`${90}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>JAVASCRIPT</h4>
+          <div className=" m-auto w-60">
+            <CircularProgressbar value={85} text={`${85}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>REACT</h4>
+          <div className="m-auto w-60">
+            <CircularProgressbar value={90} text={`${90}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>PHP</h4>
+          <div className="m-auto w-60">
+            {" "}
+            <CircularProgressbar value={60} text={`${60}%`} />
+          </div>
+        </div>
+        <div className="skill-item ">
           <h4>HTML</h4>
-          <div className="m-auto w-32">
+          <div className="m-auto w-60">
             <CircularProgressbar value={99} text={`${99}%`} />
           </div>
         </div>
         <div className="skill-item ">
           <h4>CSS </h4>
-          <div className="m-auto w-32">
+          <div className="m-auto w-60">
             <CircularProgressbar value={90} text={`${90}%`} />
           </div>
         </div>
         <div className="skill-item ">
           <h4>TAILWIND</h4>
-          <div className=" m-auto w-32">
+          <div className=" m-auto w-60">
             {" "}
             <CircularProgressbar value={90} text={`${90}%`} />
           </div>
         </div>
         <div className="skill-item ">
           <h4>BOOTSRAP</h4>
-          <div className="m-auto w-32">
-            <CircularProgressbar value={90} text={`${90}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>JS</h4>
-          <div className=" m-auto w-32">
-            <CircularProgressbar value={85} text={`${85}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>REACT</h4>
-          <div className="m-auto w-32">
-            <CircularProgressbar value={90} text={`${90}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>PYTHON</h4>
-          <div className="m-auto w-32">
-            <CircularProgressbar value={90} text={`${90}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>FLASK</h4>
-          <div className="m-auto w-32">
-            <CircularProgressbar value={90} text={`${90}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>DJANGO</h4>
-          <div className="m-auto w-32">
-            <CircularProgressbar value={70} text={`${70}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>PHP</h4>
-          <div className="m-auto w-32">
-            {" "}
-            <CircularProgressbar value={60} text={`${60}%`} />
-          </div>
-        </div>
-        <div className="skill-item ">
-          <h4>SQL</h4>
-          <div className="m-auto w-32">
-            {" "}
+          <div className="m-auto w-60">
             <CircularProgressbar value={90} text={`${90}%`} />
           </div>
         </div>

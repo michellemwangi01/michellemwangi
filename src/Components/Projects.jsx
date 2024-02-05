@@ -1,47 +1,47 @@
 import React from "react";
-import Carousel from "react-spring-3d-carousel";
-import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
+import FancyCarousel from "react-fancy-circular-carousel";
+import "react-fancy-circular-carousel/FancyCarousel.css";
+
+import image1 from "../assets/ecommerce.jpg";
+import image2 from "../assets/gaming.jpg";
+import image3 from "../assets/house.jpg";
+import image4 from "../assets/Jewelry.jpg";
+import image5 from "../assets/pets.jpg";
+import image6 from "../assets/cinema.jpg";
+import image7 from "../assets/banking.jpg";
+// import image8 from "../assets/pexels-anni-roenkae-3109850.jpg";
 
 const Projects = () => {
-  const slides = [
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/800/800/?random" alt="1" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/800/800/?random" alt="2" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/600/800/?random" alt="3" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/800/500/?random" alt="4" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/800/800/?random" alt="5" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/500/800/?random" alt="6" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/800/600/?random" alt="7" />,
-    },
-    {
-      key: uuidv4(),
-      content: <img src="https://picsum.photos/800/800/?random" alt="8" />,
-    },
+  const images = [image1, image2, image3, image4, image5, image6, image7];
+  const info = [
+    "Delhi",
+    "Mumbai",
+    "Bengaluru",
+    "Kolkata",
+    "Delhi",
+    "Mumbai",
+    "Bengaluru",
+    "Kolkata",
   ];
-
+  const [focusElement, setFocusElement] = useState(0);
   return (
-    <div className="bg-black">
-      <h1 className="text-white text-center"> Projects</h1>
-      <Carousel slides={slides} />
+    <div className=" flex justify-center m-auto my-60 w-3/4">
+      <FancyCarousel
+        className="w-1/2"
+        images={images}
+        setFocusElement={setFocusElement}
+        carouselRadius={300}
+        peripheralImageRadius={80}
+        centralImageRadius={120}
+        focusElementStyling={{ border: "2px solid #ba4949" }}
+        autoRotateTime={5}
+        borderWidth={4}
+        borderHexColor={"pink"}
+      />
+      <div className="w-1/2 text-center">
+        <p>{info[focusElement]}</p>
+      </div>
     </div>
   );
 };

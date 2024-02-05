@@ -186,7 +186,8 @@ li {
 .skill-slider {
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent line breaks */
-  width: 60%;
+  width: 100%;
+  height: 56vh;
   margin: auto;
   /* overflow-x: hidden; */
 }
@@ -219,6 +220,7 @@ li {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* .Home0 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
- */
+
+li .react-multi-carousel-item {
+  margin: auto;
+}

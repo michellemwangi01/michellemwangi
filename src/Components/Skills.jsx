@@ -6,11 +6,10 @@ import SkillsSlider from "./SkillsSlider";
 const Skills = () => {
   return (
     <>
-      <div id="whatCanIdo" className=" bg-gray-100 m-auto">
+      <div id="whatCanIdo" className=" bg-gray-100 m-auto py-20">
         <h1 className="text-center p-4">What I Can Do</h1>
-        <h4 className="text-center mb-4">Language SKills</h4>
-        <SkillsSlider />
-        <h4 className="text-center mt-8">Technical SKills</h4>
+
+        {/* <h4 className="text-center mt-8">Technical SKills</h4> */}
         <div
           className=" flex m-auto justify-center flex-wrap"
           style={{ width: "98%" }}
