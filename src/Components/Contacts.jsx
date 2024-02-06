@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <div>
+    <div id="contactMe">
       {/* <h1 className="text-center"></h1> */}
       <div className="">
         <section class="bg-white dark:bg-gray-900">
@@ -61,7 +61,7 @@ const Contacts = () => {
                       type="text"
                       id="subject"
                       class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder="Let us know how we can help you"
+                      placeholder="Let me know how I can help you"
                       required
                     />
                   </div>
@@ -92,7 +92,7 @@ const Contacts = () => {
           </div>
         </section>
         <div>
-          <p className="text-center bg-gray-900 text-white pt-12 pb-4">
+          <p className="text-center bg-gray-900 text-white pt-8 pb-4">
             ©2023 MichelleMwangi All rights reserved.
           </p>
         </div>

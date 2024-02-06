@@ -122,7 +122,7 @@ const Projects = () => {
   }, [focusElement]);
 
   return (
-    <div>
+    <div id="projects">
       <h1 className="text-center mt-4">My Projects</h1>
       <div className=" flex justify-center m-auto my-40 w-3/4 ">
         <FancyCarousel

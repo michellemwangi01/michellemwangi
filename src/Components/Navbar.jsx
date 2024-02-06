@@ -35,20 +35,20 @@ const Navbar = () => {
 
         <div className="md:flex hidden align-middle text-xl md:justify-evenly md:flex-nowrap md:flex-row flex-col justify-center  ">
           <div className="navItem text-end h-10">
-            <p className="p-2">
-              <AnchorLink href="#whoamI">About</AnchorLink>
+            <p className="">
+              <AnchorLink href="#whoamI">About Me</AnchorLink>
             </p>
           </div>
           <div className="navItem  text-end h-10">
-            <p className="p-2">
+            <p className="">
               <AnchorLink href="#whatCanIdo">Skills</AnchorLink>
             </p>
           </div>
           <div className="navItem  text-end h-10">
-            <p className="p-2">Projects</p>
+            <AnchorLink href="#projects">Projects</AnchorLink>
           </div>
           <div className="navItem  text-end h-10">
-            <p className=" border border-pink-200 p-2">Let's Connect</p>
+            <AnchorLink href="#contactMe">Let's Connect</AnchorLink>
           </div>
         </div>
         {showMenu && (
@@ -57,13 +57,13 @@ const Navbar = () => {
               <AnchorLink href="#whoamI">About</AnchorLink>
             </div>
             <div className="navItem  text-end h-10">
-              <p>Skills</p>
+              <AnchorLink href="#whatCanIdo">Skills</AnchorLink>
             </div>
             <div className="navItem  text-end h-10">
-              <p>Experience</p>
+              <AnchorLink href="#projects">Projects</AnchorLink>
             </div>
             <div className="navItem  text-end h-10">
-              <p>Projects</p>
+              <AnchorLink href="#contactMe">Let's Connect</AnchorLink>
             </div>
           </div>
         )}

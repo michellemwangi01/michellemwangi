@@ -8,13 +8,11 @@ const Skills = () => {
     <>
       <div id="whatCanIdo" className=" bg-gray-100 m-auto py-20">
         <h1 className="text-center p-4">What I Can Do</h1>
-
-        {/* <h4 className="text-center mt-8">Technical SKills</h4> */}
         <div
           className=" flex m-auto justify-center flex-wrap"
           style={{ width: "98%" }}
         >
-          <main>
+          <main data-aos="flip-right">
             <div class="card">
               <img src="/Images/frontend_development.jpg " alt="" />
               <div class="card-content ">
@@ -34,7 +32,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main>
+          <main data-aos="flip-left">
             <div class="card">
               <img src="/Images/backend_development.png" alt="" />
               <div class="card-content">
@@ -54,7 +52,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main>
+          <main data-aos="flip-right">
             <div class="card">
               <img src="/Images/database-manageent.png" alt="" />
               <div class="card-content">
@@ -75,7 +73,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main>
+          <main data-aos="flip-left">
             <div class="card">
               <img src="/Images/project-management.jpeg" alt="" />
               <div class="card-content">
@@ -97,7 +95,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main>
+          <main data-aos="flip-right">
             <div class="card">
               <img src="/Images/technical-support.jpg" alt="" />
               <div class="card-content">
@@ -118,7 +116,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main>
+          <main data-aos="flip-left">
             <div class="card">
               <img src="/Images/bizdev.jpg" alt="" />
               <div class="card-content">
