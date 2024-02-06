@@ -10,7 +10,11 @@ const Contacts = () => {
             <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
               Get In Touch
             </h1>
-            <p class="mb-8 lg:mb-16 font-light text-center text-red-300 sm:text-xl">
+
+            <p
+              class="mb-8 lg:mb-16 font-light text-center  sm:text-xl"
+              style={{ color: "#FECACA" }}
+            >
               Need a software developer, technical assistance, want to discuss
               project collaboration, or have inquiries about business
               development and tech support services? Feel free to reach out!
@@ -32,7 +36,8 @@ const Contacts = () => {
                   <div>
                     <label
                       for="email"
-                      class="block mb-2 font-medium text-base text-red-300 font-serif"
+                      class="block mb-2 font-medium text-base  font-serif"
+                      style={{ color: "#FECACA" }}
                     >
                       Your email
                     </label>
@@ -47,7 +52,8 @@ const Contacts = () => {
                   <div>
                     <label
                       for="subject"
-                      class="block mb-2 text-base font-medium text-red-300 font-serif"
+                      class="block mb-2 text-base font-medium  font-serif"
+                      style={{ color: "#FECACA" }}
                     >
                       Subject
                     </label>
@@ -62,7 +68,8 @@ const Contacts = () => {
                   <div class="sm:col-span-2">
                     <label
                       for="message"
-                      class="block mb-2 text-base font-medium text-red-300 font-serif"
+                      class="block mb-2 text-base font-medium font-serif"
+                      style={{ color: "#FECACA" }}
                     >
                       Your message
                     </label>
