@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
           <div className="navItem  text-end h-10">
             <p className="">
-              <AnchorLink href="#whatCanIdo">Skills</AnchorLink>
+              <AnchorLink href="#whatCanIdo">Services</AnchorLink>
             </p>
           </div>
           <div className="navItem  text-end h-10">
@@ -57,7 +57,7 @@ const Navbar = () => {
               <AnchorLink href="#whoamI">About</AnchorLink>
             </div>
             <div className="navItem  text-end h-10">
-              <AnchorLink href="#whatCanIdo">Skills</AnchorLink>
+              <AnchorLink href="#whatCanIdo">Services</AnchorLink>
             </div>
             <div className="navItem  text-end h-10">
               <AnchorLink href="#projects">Projects</AnchorLink>

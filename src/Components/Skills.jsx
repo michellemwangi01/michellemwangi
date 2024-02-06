@@ -7,12 +7,12 @@ const Skills = () => {
   return (
     <>
       <div id="whatCanIdo" className=" bg-gray-100 m-auto py-20">
-        <h1 className="text-center p-4">What I Can Do</h1>
+        <h1 className="text-center ">Services</h1>
         <div
           className=" flex m-auto justify-center flex-wrap"
           style={{ width: "98%" }}
         >
-          <main data-aos="flip-right">
+          <main data-aos="flip-right" className="mb-16">
             <div class="card">
               <img src="/Images/frontend_development.jpg " alt="" />
               <div class="card-content ">
@@ -32,7 +32,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main data-aos="flip-left">
+          <main data-aos="flip-left" className="mb-16">
             <div class="card">
               <img src="/Images/backend_development.png" alt="" />
               <div class="card-content">
@@ -52,7 +52,7 @@ const Skills = () => {
             </div>
           </main>
 
-          <main data-aos="flip-right">
+          <main data-aos="flip-right" className="mb-16">
             <div class="card">
               <img src="/Images/database-manageent.png" alt="" />
               <div class="card-content">

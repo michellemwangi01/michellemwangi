@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 
 const ContactMeForm = () => {
+  // Link to the emailjs account: https://dashboard.emailjs.com/admin/account
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();

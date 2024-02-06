@@ -2,7 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import FancyCarousel from "react-fancy-circular-carousel";
 import "react-fancy-circular-carousel/FancyCarousel.css";
-
+import { FaLink, FaGithub } from "react-icons/fa";
+import { IoLinkOutline } from "react-icons/io5";
 import ecommerce from "../assets/ecommerce.jpg";
 import gaming from "../assets/gaming.jpg";
 import house from "../assets/house.jpg";
@@ -45,10 +46,8 @@ const Projects = () => {
     </>,
     <>
       Mirio Jewellers is an ecommerce platform crafted in response to the needs
-      of my brass jewelry business, Mirio Jewellers serves as an online platform
-      tailored to showcase a curated selection of high-quality jewelry products.
-      Purpose: Providing a solution for marketing and selling jewelry online,
-      reaching a diverse customer base.
+      of my brass jewelry business. It serves as an online platform tailored to
+      showcase a curated selection of high-quality jewelry products.
       <br />
       Implemented features: Secure e-commerce functionalities such as seamless
       product browsing, efficient cart management, and secure MPESA payment
@@ -101,6 +100,16 @@ const Projects = () => {
     "https://michellemwangi01.github.io/Stark-Banque/",
   ];
 
+  const gitGublinks = [
+    "https://github.com/michellemwangi01/The-Farmart-Frontend",
+    "https://github.com/michellemwangi01/Battle-Of-The-Bots",
+    "https://github.com/michellemwangi01/qwenu-residentials",
+    "https://github.com/michellemwangi01/MirioJewelryShop",
+    "https://github.com/michellemwangi01/PetPalace",
+    "https://github.com/michellemwangi01/StarkMovies",
+    "https://github.com/michellemwangi01/Stark-Banque",
+  ];
+
   const projectImages = [
     "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=600",
     "https://images.pexels.com/photos/8566474/pexels-photo-8566474.jpeg?auto=compress&cs=tinysrgb&w=300",
@@ -111,33 +120,45 @@ const Projects = () => {
     "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&w=300",
   ];
 
+  const Languages = [
+    "React ",
+    "https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "https://images.pexels.com/photos/230290/pexels-photo-230290.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=300",
+    "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&w=300",
+  ];
+
   const [focusTitle, setFocusTitle] = useState(0);
   const [focusElement, setFocusElement] = useState(0);
   const [focusLink, setFocusLink] = useState(0);
+  const [focusGHLink, setFocusGHLink] = useState(0);
 
   // Update the title when the focusElement changes
   useEffect(() => {
     setFocusTitle(focusElement);
     setFocusLink(focusElement);
+    setFocusGHLink(focusElement);
   }, [focusElement]);
 
   return (
     <div id="projects">
       <h1 className="text-center mt-4">My Projects</h1>
-      <div className=" flex justify-center m-auto my-40 w-3/4 ">
+      <div className=" flex lg:flex-nowrap flex-wrap justify-center m-auto my-40 w-3/4 ">
         <FancyCarousel
           className="w-1/2"
           images={projectImages}
           setFocusElement={setFocusElement}
           setFocusTitle={setFocusTitle}
           setFocusLink={setFocusLink}
+          setFocusGHLink={setFocusGHLink}
           carouselRadius={300}
           peripheralImageRadius={80}
           centralImageRadius={140}
           focusElementStyling={{ border: "2px solid #ba4949" }}
           autoRotateTime={5}
           borderWidth={4}
-          borderHexColor={"black"}
+          borderHexColor={"#000000"}
         />
         <div className="w-1/2 text-center ml-40">
           <h2>{title[focusTitle]}</h2>
@@ -146,13 +167,33 @@ const Projects = () => {
             style={{ backgroundColor: "#FECACA" }}
           >
             <p className="text-xl  p-6 ">{info[focusElement]}</p>
-            <a
-              className="projectsLinks"
-              href={links[focusLink]}
-              target="_blank"
-            >
-              View Project
-            </a>
+            <div className="flex align-middle justify-evenly w-3/4 m-auto">
+              <div className="flex">
+                <IoLinkOutline className="text-2xl text-indigo" />{" "}
+                <a
+                  className="projectsLinks"
+                  href={links[focusLink]}
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              </div>
+              <div className="flex">
+                <FaGithub className="text-xl text-blue-950" />
+                <a
+                  className="projectsLinks"
+                  href={gitGublinks[focusLink]}
+                  target="_blank"
+                >
+                  View Code
+                </a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

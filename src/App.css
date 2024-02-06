@@ -130,7 +130,7 @@ p {
 .projectsLinks {
   font-family: "Amita", serif;
   color: blue;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* ul {
