@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import "../Input.scss";
-import SkillsSlider from "./SkillsSlider";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Skills = () => {
   return (
@@ -24,10 +24,11 @@ const Skills = () => {
                   understanding of HTML, CSS, and JavaScript, enabling me to
                   build intuitive and accessible applications.
                 </p>
-                <a href="#" class="button">
-                  View Projects
+                <AnchorLink href="#contactMe">
+                  Request Service
                   <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
+                </AnchorLink>
+                ;
               </div>
             </div>
           </main>
@@ -44,10 +45,10 @@ const Skills = () => {
                   am skilled in server-side programming, database integration,
                   and API development.
                 </p>
-                <a href="#" class="button">
-                  View Projects
+                <AnchorLink href="#contactMe">
+                  Request Service
                   <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </main>
@@ -65,10 +66,10 @@ const Skills = () => {
                   the latest advancements which allows me to apply cutting-edge
                   techniques.
                 </p>
-                <a href="#" class="button">
-                  View Projects
+                <AnchorLink href="#contactMe">
+                  Request Service
                   <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </main>
@@ -82,15 +83,15 @@ const Skills = () => {
                   As a seasoned IT Project Manager, I excel at leading
                   cross-functional teams, effectively managing project
                   lifecycles, and consistently delivering results on time and
-                  within budget. My experience in implementations projects has
-                  honed my leadership, communication, and problem-solving
-                  skills, ensuring smooth project execution and client
-                  satisfaction.
+                  within budget using AGILE methodologies. My experience in
+                  implementations projects has honed my leadership,
+                  communication, and problem-solving skills, ensuring smooth
+                  project execution and client satisfaction.
                 </p>
-                <a href="#" class="button">
-                  View Projects
+                <AnchorLink href="#contactMe">
+                  Request Service
                   <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </main>
@@ -108,10 +109,10 @@ const Skills = () => {
                   resolve issues quickly and effectively, delivering excellent
                   customer service and ensuring optimal system uptime.
                 </p>
-                <a href="#" class="button">
-                  View Projects
+                <AnchorLink href="#contactMe">
+                  Request Service
                   <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </main>
@@ -129,10 +130,10 @@ const Skills = () => {
                   negotiating successful deals. I'm experienced in building
                   profitable partnerships and driving company growth.
                 </p>
-                <a href="#" class="button">
-                  View Projects
+                <AnchorLink href="#contactMe">
+                  Request Service
                   <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
+                </AnchorLink>
               </div>
             </div>
           </main>

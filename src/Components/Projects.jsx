@@ -120,25 +120,26 @@ const Projects = () => {
     "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&w=300",
   ];
 
-  const Languages = [
-    "React ",
-    "https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg?auto=compress&cs=tinysrgb&w=300",
-    "https://images.pexels.com/photos/230290/pexels-photo-230290.jpeg?auto=compress&cs=tinysrgb&w=300",
-    "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=300",
-    "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=300",
-    "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&w=300",
-  ];
+  const firstLanguages = ["ReactJS", "Vanilla Javascript", "Python", "FLASK"];
+
+  const secondLanguages = ["ReactJS", "Vanilla Javascript", "Python", "HTML"];
+
+  const thirdLanguages = ["React", "Vanilla Javascript", "Python", "HTML"];
+
+  const fourthLanguages = ["React", "Vanilla Javascript", "Python", "HTML"];
 
   const [focusTitle, setFocusTitle] = useState(0);
   const [focusElement, setFocusElement] = useState(0);
   const [focusLink, setFocusLink] = useState(0);
   const [focusGHLink, setFocusGHLink] = useState(0);
+  const [focusFirstLanguage, setFocusFirstLanguage] = useState(0);
 
   // Update the title when the focusElement changes
   useEffect(() => {
     setFocusTitle(focusElement);
     setFocusLink(focusElement);
     setFocusGHLink(focusElement);
+    setFocusFirstLanguage(focusElement);
   }, [focusElement]);
 
   return (
@@ -149,19 +150,36 @@ const Projects = () => {
           className="w-1/2"
           images={projectImages}
           setFocusElement={setFocusElement}
-          setFocusTitle={setFocusTitle}
-          setFocusLink={setFocusLink}
-          setFocusGHLink={setFocusGHLink}
           carouselRadius={300}
           peripheralImageRadius={80}
           centralImageRadius={140}
           focusElementStyling={{ border: "2px solid #ba4949" }}
           autoRotateTime={5}
           borderWidth={4}
-          borderHexColor={"#000000"}
+          borderHexColor={"#FECACA"}
         />
         <div className="w-1/2 text-center ml-40">
           <h2>{title[focusTitle]}</h2>
+          <div className="languages flex justify-evenly">
+            <div className="flex align-middle my-4 justify-center bg-blue-950 text-white w-1/6 p-2 rounded-md">
+              <p className="text-center">REACT JS</p>
+            </div>
+            <div className="flex align-middle my-4 justify-center bg-blue-950 text-white w-1/6 p-2 rounded-md">
+              {/* <p>{firstLanguages[focusFirstLanguage]}</p>
+               */}
+              <p>Python</p>
+            </div>
+            <div className="flex align-middle my-4 justify-center bg-blue-950 text-white w-1/6 p-2 rounded-md">
+              {/* <p>{firstLanguages[focusFirstLanguage]}</p>
+               */}
+              <p>SQL</p>
+            </div>
+            <div className="flex align-middle my-4 justify-center bg-blue-950 text-white w-1/6 p-2 rounded-md">
+              {/* <p>{firstLanguages[focusFirstLanguage]}</p>
+               */}
+              <p>Tailwind</p>
+            </div>
+          </div>
           <div
             className="rounded-xl pb-4"
             style={{ backgroundColor: "#FECACA" }}
@@ -169,9 +187,9 @@ const Projects = () => {
             <p className="text-xl  p-6 ">{info[focusElement]}</p>
             <div className="flex align-middle justify-evenly w-3/4 m-auto">
               <div className="flex">
-                <IoLinkOutline className="text-2xl text-indigo" />{" "}
+                <IoLinkOutline className="text-2xl text-indigo" />
                 <a
-                  className="projectsLinks"
+                  className="projectsLinks text-blue-950"
                   href={links[focusLink]}
                   target="_blank"
                 >
@@ -181,17 +199,12 @@ const Projects = () => {
               <div className="flex">
                 <FaGithub className="text-xl text-blue-950" />
                 <a
-                  className="projectsLinks"
-                  href={gitGublinks[focusLink]}
+                  className="projectsLinks  text-blue-950"
+                  href={gitGublinks[focusGHLink]}
                   target="_blank"
                 >
                   View Code
                 </a>
-              </div>
-            </div>
-            <div>
-              <div>
-                <p></p>
               </div>
             </div>
           </div>

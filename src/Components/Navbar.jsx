@@ -45,10 +45,14 @@ const Navbar = () => {
             </p>
           </div>
           <div className="navItem  text-end h-10">
-            <AnchorLink href="#projects">Projects</AnchorLink>
+            <p>
+              <AnchorLink href="#projects">Projects</AnchorLink>
+            </p>
           </div>
           <div className="navItem  text-end h-10">
-            <AnchorLink href="#contactMe">Let's Connect</AnchorLink>
+            <p>
+              <AnchorLink href="#contactMe">Let's Connect</AnchorLink>
+            </p>
           </div>
         </div>
         {showMenu && (

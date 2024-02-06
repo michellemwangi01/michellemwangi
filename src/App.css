@@ -129,7 +129,8 @@ p {
 
 .projectsLinks {
   font-family: "Amita", serif;
-  color: blue;
+  font-weight: 700;
+  /* color: blue; */
   /* text-decoration: underline; */
 }
 

@@ -90,22 +90,7 @@ const SkillsSlider = () => {
             />
           </div>
         </div>
-        <div className="skill-item ">
-          <h4>SQL</h4>
-          <div className="m-auto w-60">
-            {" "}
-            <CircularProgressbar
-              styles={{
-                text: {
-                  fill: "#ffffff",
-                  fontSize: "16px",
-                },
-              }}
-              value={90}
-              text={`${90}%`}
-            />
-          </div>
-        </div>
+
         <div className="skill-item ">
           <h4>JAVASCRIPT</h4>
           <div className=" m-auto w-60">
@@ -151,6 +136,22 @@ const SkillsSlider = () => {
               }}
               value={60}
               text={`${60}%`}
+            />
+          </div>
+        </div>
+        <div className="skill-item ">
+          <h4>SQL</h4>
+          <div className="m-auto w-60">
+            {" "}
+            <CircularProgressbar
+              styles={{
+                text: {
+                  fill: "#ffffff",
+                  fontSize: "16px",
+                },
+              }}
+              value={90}
+              text={`${90}%`}
             />
           </div>
         </div>
