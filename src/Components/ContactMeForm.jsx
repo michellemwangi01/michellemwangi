@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactMeForm = () => {
   const form = useRef();
@@ -12,12 +13,20 @@ const ContactMeForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          messageSent("Your message has been sent!", "success");
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
   };
+
+  // -------------------TOAST NOIFICATIONS
+
+  const messageSent = (message, type) => {
+    toast(message, { autoClose: 3000, type });
+  };
+
   return (
     <form action="#" class="space-y-8" ref={form} onSubmit={sendEmail}>
       <div>
@@ -73,7 +82,7 @@ const ContactMeForm = () => {
       </div>
       <button
         type="submit"
-        class="py-3 px-5 text-lg  font-serif text-center text-white rounded-lg bg-red-400 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+        class=" hover:bg-white hover:text-red-400 hover:border hover:border-red-400 py-3 px-5 text-lg  font-serif text-center text-white rounded-lg bg-red-400 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
       >
         Send message
       </button>

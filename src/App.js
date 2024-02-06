@@ -8,6 +8,8 @@ import Contacts from "./Components/Contacts";
 import SkillsSlider from "./Components/SkillsSlider";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   AOS.init({
@@ -17,6 +19,17 @@ function App() {
   });
   return (
     <div className="bg-white">
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Banner />
       <About />
       <Skills />
