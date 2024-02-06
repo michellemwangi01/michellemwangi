@@ -22,19 +22,14 @@ const Banner = () => {
               <MyNameAnimation className="roles" />
             </div>
           </div>
-          <div className="flex align-middle py-20 md:w-1/3 w-full overflow-visible relative h-full  ">
+          <div className="flex align-middle py-20 md:w-1/3 w-full overflow-visible  h-full">
             <img
               src="/Images/AI_CoderGirl.jpg"
-              className="object-cover  rounded-full"
+              className="object-cover rounded-full"
               alt="Michelle Mwangi"
               style={{
-                // position: "absolute",
-                // // transform: "scale(1.2)",
-                // // top: "px",
-                // right: "10px",
                 height: "100%",
                 opacity: "0.6",
-                // borderRadius: "35%",
               }}
             />
           </div>

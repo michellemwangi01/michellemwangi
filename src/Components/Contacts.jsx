@@ -91,6 +91,11 @@ const Contacts = () => {
             </div>
           </div>
         </section>
+        <div>
+          <p className="text-center bg-gray-900 text-white pt-12 pb-4">
+            ©2023 MichelleMwangi All rights reserved.
+          </p>
+        </div>
       </div>
     </div>
   );
