@@ -154,7 +154,7 @@ const SkillsSlider = () => {
               text={`${90}%`}
             />
           </div>
-        </div>
+        </div>ortf
         <div className="skill-item ">
           <h4>HTML</h4>
           <div className="m-auto w-60">
