@@ -90,7 +90,6 @@ const SkillsSlider = () => {
             />
           </div>
         </div>
-
         <div className="skill-item ">
           <h4>JAVASCRIPT</h4>
           <div className=" m-auto w-60">
@@ -154,7 +153,7 @@ const SkillsSlider = () => {
               text={`${90}%`}
             />
           </div>
-        </div>ortf
+        </div>
         <div className="skill-item ">
           <h4>HTML</h4>
           <div className="m-auto w-60">
